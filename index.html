@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sushant Kulkarni — Software Engineer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">SSK<span>.</span></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="mailto:kulkarnisushant87@gmail.com" class="nav-cta">Hire Me</a>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#experience" onclick="closeMenu()">Experience</a>
+    <a href="#education" onclick="closeMenu()">Education</a>
+    <a href="#skills" onclick="closeMenu()">Skills</a>
+    <a href="#projects" onclick="closeMenu()">Projects</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1 class="hero-name">
+          <span class="first">Sushant </span><br/>
+          <span class="last">Kulkarni</span>
+        </h1>
+        <p class="hero-role">Software Engineer · Python · Backend · AI Evaluation</p>
+        <p class="hero-desc">
+          Backend Python engineer working on how AI coding agents are measured. Currently an Expert Contributor
+          at Snorkel AI and Backend AI Intern at Flyrank AI — building FastAPI services, writing test suites
+          that fail for the right reasons, and shipping end-to-end systems.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="assets/Sushant_Kulkarni_Resume.pdf" download class="btn-outline">Download Resume</a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-num">2</div>
+            <div class="stat-label">Active Roles</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">16+</div>
+            <div class="stat-label">AI Tasks Reviewed</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">15+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <img src="assets/profile.jpg" alt="Sushant Kulkarni" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <p class="section-label">Who I Am</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="divider"></div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am <strong>Sushant Kulkarni</strong>, a software engineer based in Pune, India.
+            I transitioned into software from a mechanical engineering background — learning Python,
+            SQL, web development, and applied ML through deliberate, project-driven study.
+          </p>
+          <p>
+            Today I work as an <strong>Expert Contributor at Crossing Hurdles</strong>reviewing and repairing software-engineering evaluation tasks that are used to train and
+            benchmark frontier coding agents. I also build Python backend services as a
+            <strong>Backend AI Intern at Flyrank AI</strong>.
+          </p>
+          <p>
+            I build end-to-end — REST APIs, data pipelines, ML models, React dashboards, Docker
+            containers, and CI pipelines. I care about tests that prove what they claim to prove
+            and code that is correct by construction.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">🧪</div>
+            <div>
+              <h4>AI Evaluation & Test Design</h4>
+              <p>Repair and verify SWE tasks used to train frontier coding agents at Snorkel AI.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🏗️</div>
+            <div>
+              <h4>Backend & API Engineering</h4>
+              <p>FastAPI, Flask, Django — REST APIs with JWT auth, PostgreSQL, Redis, Docker.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🤖</div>
+            <div>
+              <h4>AI / ML Integration</h4>
+              <p>LLM APIs (Groq, OpenAI, Anthropic), NLP pipelines, classification, MLflow.</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">☁️</div>
+            <div>
+              <h4>Cloud & DevOps</h4>
+              <p>Docker, GitHub Actions CI, AWS EC2/RDS, Nginx — production deployment experience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label">Where I've Worked</p>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="divider"></div>
+      <div class="exp-grid">
+
+        <div class="exp-card current">
+          <div class="exp-header">
+            <div class="exp-date">Jun 2026 – Present · Remote</div>
+            <div class="exp-role">Backend AI Intern</div>
+            <div class="exp-org">Flyrank AI (Startup)</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Build Python backend services with <strong>FastAPI</strong>, validating consistency between backend state and database records.</li>
+            <li>Write and optimize complex <strong>SQL against PostgreSQL</strong> — multi-table joins, aggregations, CTEs, and window functions — to power application workflows.</li>
+            <li>Debug and root-cause API, data, and integration failures across a fully distributed team, working day-to-day with <strong>Git, pull-request review, Agile, JIRA, and Confluence</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card current">
+          <div class="exp-header">
+            <div class="exp-date">Jul 2025 – Present · Remote (Contract)</div>
+            <div class="exp-role">Expert Contributor, Software Engineering</div>
+            <div class="exp-org">Crossing Hurdles</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Review, repair, and verify <strong>16+ software-engineering evaluation tasks</strong> built from real open-source pull requests — used to train and benchmark frontier coding agents.</li>
+            <li>Judge whether a task's tests actually prove the behaviour its instruction asks for — rewrote count-based assertions in a concurrency test with thread-identity assertions after finding the originals passed on the unfixed baseline.</li>
+            <li>Close <strong>reward-hacking routes</strong>: solution leakage in prompts, assertions satisfiable by editing the test file rather than the implementation, and over-prescriptive wording.</li>
+            <li>Verify each repair by running the full test loop in isolated containers.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-date">2022 – May 2026 · Pune, India</div>
+            <div class="exp-role">Independent Study — Software & Data</div>
+            <div class="exp-org">Self-Directed</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Transitioned from mechanical engineering into software through deliberate study of Python, SQL, system architecture, and applied ML.</li>
+            <li>Built and published <strong>15+ end-to-end projects</strong> on GitHub ranging from REST APIs to production ML systems with CI pipelines.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <p class="section-label">Academic Background</p>
+      <h2 class="section-title">Education</h2>
+      <div class="divider"></div>
+      <div class="exp-grid">
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-date">2018 – 2022 · Pune, India</div>
+            <div class="exp-role">B.E., Mechanical Engineering</div>
+            <div class="exp-org">JSPM's Rajarshi Shahu College of Engineering</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Core engineering fundamentals including mathematics, analytical modeling, and systems thinking.</li>
+            <li>Additional coursework and certifications: SQL Bootcamp, Software Engineering Job Simulation (Forage), and Azure Fundamentals AZ-900 (in progress).</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <p class="section-label">What I Work With</p>
+      <h2 class="section-title">Skills</h2>
+      <div class="divider"></div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Backend & APIs</div>
+          <div class="skill-tags">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">REST API Design</span>
+            <span class="skill-tag">SQLAlchemy</span>
+            <span class="skill-tag">Celery</span>
+            <span class="skill-tag">JWT Auth</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Frontend</div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">Chart.js</span>
+            <span class="skill-tag">Streamlit</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Databases</div>
+          <div class="skill-tags">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Redis</span>
+            <span class="skill-tag">SQLite</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">Testing & Quality</div>
+          <div class="skill-tags">
+            <span class="skill-tag">pytest</span>
+            <span class="skill-tag">Unit Testing</span>
+            <span class="skill-tag">Integration Testing</span>
+            <span class="skill-tag">Mutation Testing</span>
+            <span class="skill-tag">Code Review</span>
+            <span class="skill-tag">GitHub Actions CI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">AI & Data</div>
+          <div class="skill-tags">
+            <span class="skill-tag">LLM APIs</span>
+            <span class="skill-tag">Groq / Llama 3.3</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">PySpark</span>
+            <span class="skill-tag">MLflow</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">AI Evaluation</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">DevOps & Tooling</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Docker Compose</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">AWS EC2 / RDS</span>
+            <span class="skill-tag">Nginx</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">JIRA / Confluence</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <p class="section-label">What I've Built</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="divider"></div>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProjects('fullstack', this)">Full-Stack</button>
+        <button class="filter-btn" onclick="filterProjects('ml', this)">AI / ML</button>
+        <button class="filter-btn" onclick="filterProjects('backend', this)">Backend</button>
+        <button class="filter-btn" onclick="filterProjects('data', this)">Data Eng</button>
+        <button class="filter-btn" onclick="filterProjects('tested', this)">Tested / CI</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-tags="fullstack,ml,data">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-flagship">Flagship</span>
+              <span class="badge badge-fullstack">Full-Stack</span>
+              <span class="badge badge-ml">ML</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08/cricketiq" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">CricketIQ</div>
+          <p class="project-desc">
+            Cricket intelligence platform analyzing ball-by-ball data for win probability, player matchups, turning points, and AI-driven strategy recommendations. ML pipelines, real-time analytics, Celery background jobs, and AWS deployment.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">MongoDB</span>
+            <span class="stack-tag">Redis</span>
+            <span class="stack-tag">Celery</span>
+            <span class="stack-tag">AWS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="fullstack,data">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-flagship">Flagship</span>
+              <span class="badge badge-fullstack">Full-Stack</span>
+              <span class="badge badge-data">Data Eng</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08/GenericRx-Generic-Medicine-Alternative-Price-Disparity-Intelligence-Platform" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">GenericRx</div>
+          <p class="project-desc">
+            Generic medicine vs branded drug intelligence platform. Normalizes salt/strength variants, computes price-per-unit, finds alternatives, and calculates monthly patient savings. Full ETL pipeline with Scrapy + Next.js UI deployed on AWS.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Next.js</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">Scrapy</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">MongoDB</span>
+            <span class="stack-tag">Pandas</span>
+            <span class="stack-tag">AWS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="backend,ml">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-flagship">Flagship</span>
+              <span class="badge badge-backend">Backend</span>
+              <span class="badge badge-ml">GenAI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08/TokenPulse-Multi-Model-LLM-Cost-Observability-Dashboard" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">TokenPulse</div>
+          <p class="project-desc">
+            Multi-model LLM observability platform tracking token usage, latency, errors, and cost across OpenAI, Anthropic, Gemini, and DeepSeek. Budget alerts, analytics dashboard, and an OpenAI-compatible proxy.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">OpenAI</span>
+            <span class="stack-tag">Anthropic</span>
+            <span class="stack-tag">Gemini</span>
+            <span class="stack-tag">DeepSeek</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="fullstack,ml">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-ml">NLP / ML</span>
+              <span class="badge badge-fullstack">Full-Stack</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08/TrustLens-E-Commerce-Fake-Review-Dark-Pattern-Detector" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">TrustLens</div>
+          <p class="project-desc">
+            E-commerce fake review and dark-pattern detector. Uses NLP to identify suspicious review clusters, semantic duplicates, sentiment manipulation, and scarcity signals. Produces a trust score per seller with a React dashboard.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Django</span>
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Celery</span>
+            <span class="stack-tag">Redis</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Selenium</span>
+            <span class="stack-tag">NLP</span>
+          </div>
+        </div>
+
+
+        <div class="project-card" data-tags="ml,backend,tested">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-ml">ML</span>
+              <span class="badge badge-tested">120 Tests</span>
+              <span class="badge badge-backend">CI/CD</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08/credit-risk-scorecard" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">Credit Risk Scorecard</div>
+          <p class="project-desc">
+            Production-grade credit risk scorecard with a 120-test suite and mutation harness that breaks the code six ways — its first run caught a test asserting nothing. WOE binning, logistic regression, MLflow experiment tracking, GitHub Actions CI, and a FastAPI service returning score + reason codes in Docker.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">pytest</span>
+            <span class="stack-tag">scikit-learn</span>
+            <span class="stack-tag">MLflow</span>
+            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">GitHub Actions</span>
+            <span class="stack-tag">Pandas</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="fullstack,ml">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-fullstack">Full-Stack</span>
+              <span class="badge badge-ml">LLM</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">AI Resume Analyzer</div>
+          <p class="project-desc">
+            Full-stack LLM app using Groq (Llama 3.3) to turn free-text resumes into structured, queryable fields. Built the relational schema, SQLAlchemy models, REST API, and React.js frontend end-to-end. Validation at the database boundary prevents malformed model output from persisting. Deployed to Vercel and Render.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Flask</span>
+            <span class="stack-tag">React.js</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">SQLAlchemy</span>
+            <span class="stack-tag">Groq / Llama 3.3</span>
+            <span class="stack-tag">Vercel</span>
+            <span class="stack-tag">Render</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="backend,tested">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-backend">Backend</span>
+              <span class="badge badge-tested">Webhook</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">GitHub Webhook Event Tracker</div>
+          <p class="project-desc">
+            Flask service ingesting GitHub webhook events in real time into MongoDB, with payload validation at the API boundary — malformed events are rejected rather than stored silently. Demonstrates production-safe ingestion patterns.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Flask</span>
+            <span class="stack-tag">MongoDB</span>
+            <span class="stack-tag">Webhooks</span>
+            <span class="stack-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="backend">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-backend">Backend</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08/url-shortner-analytics" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">Smart URL Shortener & Analytics</div>
+          <p class="project-desc">
+            Feature-rich URL shortener with A/B routing, device-based routing, JWT auth, password-protected links, QR codes, click analytics, Redis caching, rate limiting, and bot filtering.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">Redis</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">JWT</span>
+            <span class="stack-tag">QR Codes</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="data,ml">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-data">Data Eng</span>
+              <span class="badge badge-ml">ML</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08/scraper-entity-resolution" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">Scraper Entity Resolution</div>
+          <p class="project-desc">
+            Scrapes product catalog data, cleans and validates it, then matches duplicate real-world entities using blocking, feature engineering, and ML classification. Includes precision/recall evaluation metrics.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Scrapy</span>
+            <span class="stack-tag">Pandas</span>
+            <span class="stack-tag">scikit-learn</span>
+            <span class="stack-tag">SQLite</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <p class="section-label">Let's Connect</p>
+        <h2 class="section-title">Open to Opportunities</h2>
+        <div class="divider" style="margin: 0 auto 1.5rem;"></div>
+        <p class="contact-intro">
+          I'm looking for full-time roles in backend engineering, full-stack development, or AI/ML engineering.
+          I'm already working async in a fully distributed team — I write clean code, design tests that prove
+          what they claim to prove, and I'm ready to contribute from day one.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:kulkarnisushant87@gmail.com" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            kulkarnisushant87@gmail.com
+          </a>
+          <a href="https://github.com/sushantk08" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            github.com/sushantk08
+          </a>
+          <a href="https://linkedin.com/in/sushant-kulkarni-b22214147" target="_blank" rel="noopener noreferrer" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="tel:+919370894298" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            +91 93708 94298
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Sushant Satish Kulkarni · Pune, India · IST (UTC+5:30) · Already working async in a fully distributed team</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
