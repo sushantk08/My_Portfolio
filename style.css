@@ -273,13 +273,14 @@ section {
   transform: translateY(-2px);
 }
 
+/* Increased Profile Avatar Size */
 .hero-avatar {
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   border-radius: 50%;
   position: relative;
   flex-shrink: 0;
-  box-shadow: 0 0 60px rgba(108, 99, 255, 0.35);
+  box-shadow: 0 0 70px rgba(108, 99, 255, 0.35);
   background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
   padding: 4px;
 }
@@ -660,6 +661,7 @@ section {
 .project-links {
   display: flex;
   gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .project-link {
@@ -668,12 +670,25 @@ section {
   border: 1px solid var(--border);
   border-radius: 6px;
   color: var(--muted);
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
 
 .project-link:hover {
   color: var(--accent2);
   border-color: var(--accent2);
+}
+
+/* Distinct highlight for Live Demo button */
+.project-link-live {
+  border-color: rgba(52, 211, 153, 0.4);
+  color: #34d399;
+  background: rgba(52, 211, 153, 0.08);
+}
+
+.project-link-live:hover {
+  border-color: #34d399;
+  color: #ffffff;
+  background: rgba(52, 211, 153, 0.2);
 }
 
 .project-name {
@@ -783,7 +798,10 @@ footer {
     text-align: center;
   }
   .hero-avatar {
-    display: none;
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 1.5rem;
   }
   .hero-btns {
     justify-content: center;

@@ -7,7 +7,7 @@
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   
   <!-- External Stylesheet -->
@@ -46,6 +46,7 @@
   <section id="hero">
     <div class="hero-inner">
       <div class="hero-text">
+        
         <h1 class="hero-name">
           <span class="first">Sushant </span><br/>
           <span class="last">Kulkarni</span>
@@ -77,7 +78,7 @@
         </div>
       </div>
       <div class="hero-avatar">
-        <img src="assets/profile.png" alt="Sushant Kulkarni" />
+        <img src="assets/profile.jpg" alt="Sushant Kulkarni" />
       </div>
     </div>
   </section>
@@ -96,7 +97,8 @@
             SQL, web development, and applied ML through deliberate, project-driven study.
           </p>
           <p>
-            Today I work as an <strong>Expert Contributor at Crossing Hurdles</strong>reviewing and repairing software-engineering evaluation tasks that are used to train and
+            Today I work as an <strong>Expert Contributor at Crossing Hurdles</strong>
+            reviewing and repairing software-engineering evaluation tasks that are used to train and
             benchmark frontier coding agents. I also build Python backend services as a
             <strong>Backend AI Intern at Flyrank AI</strong>.
           </p>
@@ -111,7 +113,7 @@
             <div class="highlight-icon">🧪</div>
             <div>
               <h4>AI Evaluation & Test Design</h4>
-              <p>Repair and verify SWE tasks used to train frontier coding agents at Snorkel AI.</p>
+              <p>Repair and verify SWE tasks used to train frontier coding agents at Crossing Hurdles.</p>
             </div>
           </div>
           <div class="highlight-card">
@@ -305,7 +307,7 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <p class="section-label">What I've Built</p>
+      <p class="section-label">What I have Built</p>
       <h2 class="section-title">Projects</h2>
       <div class="divider"></div>
 
@@ -319,110 +321,6 @@
       </div>
 
       <div class="projects-grid">
-
-        <div class="project-card" data-tags="fullstack,ml,data">
-          <div class="project-top">
-            <div class="project-badges">
-              <span class="badge badge-flagship">Flagship</span>
-              <span class="badge badge-fullstack">Full-Stack</span>
-              <span class="badge badge-ml">ML</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sushantk08/cricketiq" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
-            </div>
-          </div>
-          <div class="project-name">CricketIQ</div>
-          <p class="project-desc">
-            Cricket intelligence platform analyzing ball-by-ball data for win probability, player matchups, turning points, and AI-driven strategy recommendations. ML pipelines, real-time analytics, Celery background jobs, and AWS deployment.
-          </p>
-          <div class="project-stack">
-            <span class="stack-tag">React</span>
-            <span class="stack-tag">FastAPI</span>
-            <span class="stack-tag">PostgreSQL</span>
-            <span class="stack-tag">MongoDB</span>
-            <span class="stack-tag">Redis</span>
-            <span class="stack-tag">Celery</span>
-            <span class="stack-tag">AWS</span>
-          </div>
-        </div>
-
-        <div class="project-card" data-tags="fullstack,data">
-          <div class="project-top">
-            <div class="project-badges">
-              <span class="badge badge-flagship">Flagship</span>
-              <span class="badge badge-fullstack">Full-Stack</span>
-              <span class="badge badge-data">Data Eng</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sushantk08/GenericRx-Generic-Medicine-Alternative-Price-Disparity-Intelligence-Platform" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
-            </div>
-          </div>
-          <div class="project-name">GenericRx</div>
-          <p class="project-desc">
-            Generic medicine vs branded drug intelligence platform. Normalizes salt/strength variants, computes price-per-unit, finds alternatives, and calculates monthly patient savings. Full ETL pipeline with Scrapy + Next.js UI deployed on AWS.
-          </p>
-          <div class="project-stack">
-            <span class="stack-tag">Next.js</span>
-            <span class="stack-tag">FastAPI</span>
-            <span class="stack-tag">Scrapy</span>
-            <span class="stack-tag">PostgreSQL</span>
-            <span class="stack-tag">MongoDB</span>
-            <span class="stack-tag">Pandas</span>
-            <span class="stack-tag">AWS</span>
-          </div>
-        </div>
-
-        <div class="project-card" data-tags="backend,ml">
-          <div class="project-top">
-            <div class="project-badges">
-              <span class="badge badge-flagship">Flagship</span>
-              <span class="badge badge-backend">Backend</span>
-              <span class="badge badge-ml">GenAI</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sushantk08/TokenPulse-Multi-Model-LLM-Cost-Observability-Dashboard" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
-            </div>
-          </div>
-          <div class="project-name">TokenPulse</div>
-          <p class="project-desc">
-            Multi-model LLM observability platform tracking token usage, latency, errors, and cost across OpenAI, Anthropic, Gemini, and DeepSeek. Budget alerts, analytics dashboard, and an OpenAI-compatible proxy.
-          </p>
-          <div class="project-stack">
-            <span class="stack-tag">Python</span>
-            <span class="stack-tag">FastAPI</span>
-            <span class="stack-tag">PostgreSQL</span>
-            <span class="stack-tag">OpenAI</span>
-            <span class="stack-tag">Anthropic</span>
-            <span class="stack-tag">Gemini</span>
-            <span class="stack-tag">DeepSeek</span>
-          </div>
-        </div>
-
-        <div class="project-card" data-tags="fullstack,ml">
-          <div class="project-top">
-            <div class="project-badges">
-              <span class="badge badge-ml">NLP / ML</span>
-              <span class="badge badge-fullstack">Full-Stack</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/sushantk08/TrustLens-E-Commerce-Fake-Review-Dark-Pattern-Detector" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
-            </div>
-          </div>
-          <div class="project-name">TrustLens</div>
-          <p class="project-desc">
-            E-commerce fake review and dark-pattern detector. Uses NLP to identify suspicious review clusters, semantic duplicates, sentiment manipulation, and scarcity signals. Produces a trust score per seller with a React dashboard.
-          </p>
-          <div class="project-stack">
-            <span class="stack-tag">Django</span>
-            <span class="stack-tag">React</span>
-            <span class="stack-tag">Celery</span>
-            <span class="stack-tag">Redis</span>
-            <span class="stack-tag">PostgreSQL</span>
-            <span class="stack-tag">Selenium</span>
-            <span class="stack-tag">NLP</span>
-          </div>
-        </div>
-
 
         <div class="project-card" data-tags="ml,backend,tested">
           <div class="project-top">
@@ -472,6 +370,115 @@
             <span class="stack-tag">Groq / Llama 3.3</span>
             <span class="stack-tag">Vercel</span>
             <span class="stack-tag">Render</span>
+          </div>
+        </div>
+
+        <!-- CricketIQ with Live Demo -->
+        <div class="project-card" data-tags="fullstack,ml,data">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-flagship">Flagship</span>
+              <span class="badge badge-fullstack">Full-Stack</span>
+              <span class="badge badge-ml">ML</span>
+            </div>
+            <div class="project-links">
+              <a href="https://cricketiq.duckdns.org" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">Live Demo ↗</a>
+              <a href="https://github.com/sushantk08/cricketiq" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">CricketIQ</div>
+          <p class="project-desc">
+            Cricket intelligence platform analyzing ball-by-ball data for win probability, player matchups, turning points, and AI-driven strategy recommendations. ML pipelines, real-time analytics, Celery background jobs, and AWS deployment.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">MongoDB</span>
+            <span class="stack-tag">Redis</span>
+            <span class="stack-tag">Celery</span>
+            <span class="stack-tag">AWS</span>
+          </div>
+        </div>
+
+        <!-- GenericRx with Live Demo -->
+        <div class="project-card" data-tags="fullstack,data">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-flagship">Flagship</span>
+              <span class="badge badge-fullstack">Full-Stack</span>
+              <span class="badge badge-data">Data Eng</span>
+            </div>
+            <div class="project-links">
+              <a href="https://generic-rx.duckdns.org" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">Live Demo ↗</a>
+              <a href="https://github.com/sushantk08/GenericRx-Generic-Medicine-Alternative-Price-Disparity-Intelligence-Platform" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">GenericRx</div>
+          <p class="project-desc">
+            Generic medicine vs branded drug intelligence platform. Normalizes salt/strength variants, computes price-per-unit, finds alternatives, and calculates monthly patient savings. Full ETL pipeline with Scrapy + Next.js UI deployed on AWS.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Next.js</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">Scrapy</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">MongoDB</span>
+            <span class="stack-tag">Pandas</span>
+            <span class="stack-tag">AWS</span>
+          </div>
+        </div>
+
+        <div class="project-card" data-tags="backend,ml">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-flagship">Flagship</span>
+              <span class="badge badge-backend">Backend</span>
+              <span class="badge badge-ml">GenAI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/sushantk08/TokenPulse-Multi-Model-LLM-Cost-Observability-Dashboard" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">TokenPulse</div>
+          <p class="project-desc">
+            Multi-model LLM observability platform tracking token usage, latency, errors, and cost across OpenAI, Anthropic, Gemini, and DeepSeek. Budget alerts, analytics dashboard, and an OpenAI-compatible proxy.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">OpenAI</span>
+            <span class="stack-tag">Anthropic</span>
+            <span class="stack-tag">Gemini</span>
+            <span class="stack-tag">DeepSeek</span>
+          </div>
+        </div>
+
+        <!-- TrustLens with Live Demo -->
+        <div class="project-card" data-tags="fullstack,ml">
+          <div class="project-top">
+            <div class="project-badges">
+              <span class="badge badge-ml">NLP / ML</span>
+              <span class="badge badge-fullstack">Full-Stack</span>
+            </div>
+            <div class="project-links">
+              <a href="https://trustlens-tau-eight.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link project-link-live">Live Demo ↗</a>
+              <a href="https://github.com/sushantk08/TrustLens-E-Commerce-Fake-Review-Dark-Pattern-Detector" target="_blank" rel="noopener noreferrer" class="project-link">GitHub →</a>
+            </div>
+          </div>
+          <div class="project-name">TrustLens</div>
+          <p class="project-desc">
+            E-commerce fake review and dark-pattern detector. Uses NLP to identify suspicious review clusters, semantic duplicates, sentiment manipulation, and scarcity signals. Produces a trust score per seller with a React dashboard.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Django</span>
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Celery</span>
+            <span class="stack-tag">Redis</span>
+            <span class="stack-tag">PostgreSQL</span>
+            <span class="stack-tag">Selenium</span>
+            <span class="stack-tag">NLP</span>
           </div>
         </div>
 
